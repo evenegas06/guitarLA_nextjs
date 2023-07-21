@@ -3,15 +3,21 @@ import { Outfit } from 'next/font/google';
 import 'normalize.css';
 import './globals.css';
 
-const outfit = Outfit({ // Google font
+/**
+ * Google font configuration.
+ */
+const outfit = Outfit({
     subsets: ['latin'],
     display: 'swap',
     weight: ['400', '700', '900']
 });
 
+/**
+ * Meta tags.
+ */
 export const metadata = {
     title: 'GuitarLA 🎸',
-    description: 'GuitarLA - Venta de guitarras y blog de música. 🎸',
+    description: 'GuitarLA - Venta de guitarras y blog de música.',
 };
 
 export default function RootLayout({ children }) {
