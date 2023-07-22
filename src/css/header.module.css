@@ -1,0 +1,44 @@
+.header {
+    background-image:
+        linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)),
+        url(../../public/imgs/header.jpg);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav {
+        margin: 0;
+    }
+}
+
+.nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5rem;
+    transition-property: background-color, border-radius;
+    transition-duration: 300ms;
+}
+
+.nav a:hover {
+    background-color: var(--primary);
+    border-radius: 10px;
+}

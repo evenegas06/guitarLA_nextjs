@@ -1,16 +1,17 @@
 import Image from "next/image";
-
-import logo from '../../public/imgs/logo.svg';
 import Link from "next/link";
+
+import styles from "@/css/header.module.css";
+import logo from '../../public/imgs/logo.svg';
 
 const Header = () => {
     return (
-        <header>
-            <div className="container">
+        <header className={styles.header}>
+            <div className={`container ${styles.navbar}`}>
                 <Image src={logo} alt="Logotipo - GuitarLA" />
 
-                <nav>
-                    <Link href="/">
+                <nav className={styles.nav}>
+                    <Link className={styles.test} href="/">
                         Inicio
                     </Link>
 
