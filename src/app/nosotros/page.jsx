@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 /**
  * Meta tags.
  */
@@ -11,10 +9,7 @@ export const metadata = {
 const About = () => {
     return (
         <>
-            <Link href="/">
-                ir a inicio
-            </Link>
-            <div>About</div>
+            <h1>Nosotros</h1>
         </>
     );
 };
