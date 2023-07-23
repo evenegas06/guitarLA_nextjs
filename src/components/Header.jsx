@@ -8,6 +8,7 @@ import styles from "@/css/header.module.css";
 import logo from '../../public/imgs/logo.svg';
 
 
+
 const Header = () => {
     /* ----- Hooks ----- */
     const pathname = usePathname();
