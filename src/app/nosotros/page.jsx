@@ -14,20 +14,27 @@ export const metadata = {
 const About = () => {
     return (
         <main className="container">
-            <h2 className="heading">
+            <h1 className="heading">
                 Nosotros
-            </h2>
+            </h1>
 
             <section className={styles.content}>
                 <Image src={guitar_image} width={1000} height={800} alt="Imagen sobre nosotros." />
 
                 <div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium, voluptatum cupiditate voluptatem non alias possimus illum, ipsam molestias fugiat laborum repellat autem tempora veritatis corporis! Cumque, consequuntur veniam vitae amet delectus labore exercitationem esse pariatur a eius itaque odio ab inventore quae necessitatibus saepe dicta explicabo, ut accusantium ea.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium,
+                        voluptatum cupiditate voluptatem non alias possimus illum, ipsam molestias fugiat
+                        laborum repellat autem tempora veritatis corporis! Cumque, consequuntur veniam vitae
+                        amet delectus labore exercitationem esse pariatur a eius itaque odio ab inventore quae
+                        necessitatibus saepe dicta explicabo, ut accusantium ea.
                     </p>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aliquid repellendus dicta magni quidem corrupti blanditiis voluptate! Labore consequuntur excepturi ad culpa doloremque eius, quibusdam, animi, qui corrupti laudantium similique itaque voluptatem nam aut quaerat pariatur maiores inventore? Magni, alias!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aliquid repellendus dicta magni
+                        quidem corrupti blanditiis voluptate! Labore consequuntur excepturi ad culpa doloremque eius,
+                        quibusdam, animi, qui corrupti laudantium similique itaque voluptatem nam aut quaerat pariatur maiores
+                        inventore? Magni, alias!
                     </p>
                 </div>
             </section>

@@ -5,7 +5,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import styles from "@/css/header.module.css";
-import logo from '../../public/imgs/logo.svg';
+import logo from '@public/imgs/logo.svg';
+
+/**
+ * Nav links on header.
+ */
+const nav_links = [
+    { name: 'Inicio',   href: '/' },
+    { name: 'Nosotros', href: '/nosotros' },
+    { name: 'Blog',     href: '/blog' },
+    { name: 'Tienda',   href: '/tienda' },
+];
 
 const Header = () => {
     /* ----- Hooks ----- */
@@ -19,29 +29,19 @@ const Header = () => {
                 </Link>
 
                 <nav className={styles.nav}>
-                    <Link href="/"
-                        className={pathname === '/' ? styles.active : ''}
-                    >
-                        Inicio
-                    </Link>
+                    {nav_links.map((item) => {
+                        const is_active = pathname === item.href;
 
-                    <Link href="/nosotros"
-                        className={pathname === '/nosotros' ? styles.active : ''}
-                    >
-                        Nosotros
-                    </Link>
-
-                    <Link href="/blog"
-                        className={pathname === '/blog' ? styles.active : ''}
-                    >
-                        Blog
-                    </Link>
-
-                    <Link href="/tienda"
-                        className={pathname === '/tienda' ? styles.active : ''}
-                    >
-                        Tienda
-                    </Link>
+                        return (
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                className={is_active ? styles.active : ''}
+                            >
+                                {item.name}
+                            </Link>
+                        );
+                    })}
                 </nav>
             </div>
         </header>
